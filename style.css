@@ -14,12 +14,26 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 height: 60px;
+animation: header 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) forwards; 
+transform: translateY(-200px);
+}
+@keyframes header {
+    0%{
+        transform: translateY(-200px);
+    }
+    70%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .nav1 {
     display: flex;
     gap: 50px;
     align-items: center;
 }
+
 .nav1_h2 {
     font-size: 40px;
     font-family: fantasy;
@@ -59,17 +73,37 @@ color: cornflowerblue;
     background-color: rgb(21, 22, 32);
     color: white;
     padding: 100px;
+    animation: cubic-bezier(0.445, 0.05, 0.55, 0.95) 2s forwards main1;
+}
+@keyframes main1 {
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 .main_heading_1{
     display: flex;
     justify-self: center;
     font-size: 25px;
+    animation: heading linear 2s forwards;
+}
+@keyframes heading {
+ 0%{
+     transform: translateX(-2000px);
+ }
 }
 .main_heading_2{
     display: flex;
     justify-self: center;
     font-size: 25px;
-    
+    animation: heading linear 2s forwards;
+}
+@keyframes heading {
+ 0%{
+     transform: translateX(-2000px);
+ }
 }
 
 .button1{
@@ -82,6 +116,14 @@ color: cornflowerblue;
     font-size: 10px;
     font-weight: bold;
     transition: 1s;
+    animation: button linear 2s forwards;
+}
+@keyframes button {
+   0%{
+       transform: translateX(2000px);
+       transition: 1s;   
+    }
+   
 }
 
 button:hover{
@@ -99,6 +141,24 @@ transform: scale(0.5);
    font-size: 11px;
    width: 200px;
    list-style: none;
+   animation: lorem 2s infinite linear;
+}
+@keyframes lorem {
+    0%{
+        color: currentColor;
+    }
+    25%{
+        color: rgb(11, 3, 61);
+    }
+    50%{
+        color: rgb(7, 3, 132);
+    }
+    75%{
+        color: rgb(7, 3, 85);
+    }
+    100%{
+        color: currentColor;
+    }
 }
 .section2_li1 h2{
 text-align: center;

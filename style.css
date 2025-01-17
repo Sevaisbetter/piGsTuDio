@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 } */
 
+body{
+    font-family: "Lexend", serif;
+}
+
 .header1 {
 display: flex;
 justify-content: space-around;
